@@ -1,0 +1,6 @@
+wiki_covid19_page_root_node <- read_html(get_wiki_covid19_page)
+
+wiki_covid19_page_table_node <- html_node(wiki_covid19_page_root_node, "table")
+
+wiki_covid19_page_data_frame <- html_table(wiki_covid19_page_table_node )
+wiki_covid19_page_data_frame
